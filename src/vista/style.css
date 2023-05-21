@@ -1,0 +1,16 @@
+.pane{
+    -fx-background-image: url("/imagenes/fondoPrincipal.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size:stretch;
+}
+
+.paneLogin{
+    -fx-background-image: url("/imagenes/fondoLogin.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size:stretch;
+    
+}
+
+.labelLogin{
+    -fx-text-fill: white;
+}

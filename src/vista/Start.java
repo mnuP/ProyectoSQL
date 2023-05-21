@@ -23,6 +23,7 @@ public class Start extends Application{
         //ventana.setOnCloseRequest(event -> {event.consume();});
         Parent root= FXMLLoader.load(getClass().getResource("principal.fxml"));
         Scene scene=new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         ventana.setScene(scene);
         
         ventana.setTitle("SQL Manager");

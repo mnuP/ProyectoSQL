@@ -38,7 +38,7 @@
             <Menu fx:id="paneTablTablModilabe" mnemonicParsing="false" text="&quot;Base&quot;" />
         </menus>
       </MenuBar>
-      <Pane fx:id="paneTablTablModi" layoutY="25.0" prefHeight="563.0" prefWidth="862.0" style="-fx-background-color: C1D0B5;" visible="false">
+      <Pane fx:id="paneTablTablModi" layoutY="25.0" prefHeight="563.0" prefWidth="862.0" style="-fx-background-color: C1D0B5;" styleClass="pane" visible="false">
          <children>
             <ComboBox fx:id="paneTablTablModiComb" layoutX="110.0" layoutY="14.0" onAction="#doAccionPaneTablCombTabl" prefWidth="150.0" />
             <Label layoutX="34.0" layoutY="13.0" text="Tablas:">
@@ -93,29 +93,29 @@
             <ComboBox fx:id="paneTablTablModiCombAlter" layoutX="235.0" layoutY="212.0" prefWidth="150.0" style="-fx-background-color: #178CF9; -fx-border-color: #000000;" />
          </children>
       </Pane>
-      <Pane fx:id="paneInicio" layoutX="-1.0" layoutY="25.0" prefHeight="563.0" prefWidth="862.0" style="-fx-background-color: FFF8DE;" visible="false">
+      <Pane fx:id="paneInicio" layoutX="-1.0" layoutY="25.0" prefHeight="563.0" prefWidth="862.0" style="-fx-background-color: FFF8DE;" styleClass="paneLogin">
          <children>
             <Button fx:id="paneInicBotoLogi" layoutX="342.0" layoutY="392.0" mnemonicParsing="false" onAction="#doLogin" prefHeight="76.0" prefWidth="179.0" text="Login">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Label layoutX="288.0" layoutY="63.0" text="Direccion Conexion:">
+            <Label layoutX="288.0" layoutY="63.0" styleClass="labelLogin" text="Direccion Conexion:">
                <font>
                   <Font size="14.0" />
                </font></Label>
-            <Label layoutX="323.0" layoutY="187.0" text="Puerto:">
+            <Label layoutX="323.0" layoutY="187.0" styleClass="labelLogin" text="Puerto:">
                <font>
                   <Font size="14.0" />
                </font></Label>
-            <Label layoutX="328.0" layoutY="132.0" text="Base:">
+            <Label layoutX="328.0" layoutY="132.0" styleClass="labelLogin" text="Base:">
                <font>
                   <Font size="14.0" />
                </font></Label>
-            <Label layoutX="329.0" layoutY="245.0" text="User:">
+            <Label layoutX="329.0" layoutY="245.0" styleClass="labelLogin" text="User:">
                <font>
                   <Font size="14.0" />
                </font></Label>
-            <Label layoutX="316.0" layoutY="299.0" text="Password:">
+            <Label layoutX="316.0" layoutY="299.0" styleClass="labelLogin" text="Password:">
                <font>
                   <Font size="14.0" />
                </font></Label>
@@ -126,7 +126,7 @@
             <PasswordField fx:id="paneInicTextPass" layoutX="447.0" layoutY="297.0" />
          </children>
       </Pane>
-      <Pane fx:id="paneBaseDato" layoutY="25.0" prefHeight="563.0" prefWidth="862.0" style="-fx-background-color: D6E8DB;" visible="false">
+      <Pane fx:id="paneBaseDato" layoutY="25.0" prefHeight="563.0" prefWidth="862.0" style="-fx-background-color: D6E8DB;" styleClass="pane" visible="false">
          <children>
             <Label layoutX="24.0" layoutY="14.0" text="Bases de Datos:">
                <font>
@@ -152,7 +152,7 @@
                </font></Label>
          </children>
       </Pane>
-      <Pane fx:id="paneCons" layoutY="25.0" prefHeight="563.0" prefWidth="862.0" style="-fx-background-color: #5FF0CB;">
+      <Pane id="panelCon" fx:id="paneCons" layoutY="25.0" prefHeight="563.0" prefWidth="862.0" styleClass="pane" stylesheets="@style.css" visible="false">
          <children>
             <Label layoutX="14.0" layoutY="14.0" text="Primera Tabla:" />
             <ComboBox fx:id="paneConsCombTabl1" layoutX="97.0" layoutY="10.0" onAction="#doAccionPaneConsCombTabl1" prefWidth="150.0" />
